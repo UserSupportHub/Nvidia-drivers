@@ -7,7 +7,7 @@ import sys
 
 # If extensions or modules to document with autodoc are in another directory,
 # add these directories to sys.path here.
-# sys.path.insert(0, os.path.abspath('../src'))
+# Example: sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
@@ -18,47 +18,35 @@ author = 'YourCompanyName Tech Team'
 # The full version, including alpha/beta/rc tags
 release = '1.0.0'
 
-# -- General configuration ---------------------------------------------------
+# -- HTML output settings ----------------------------------------------------
 
-extensions = []
-
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-# -- HTML output -------------------------------------------------------------
-
-# Choose your HTML theme (most popular: sphinx_rtd_theme)
-# To use this theme, run: pip install sphinx_rtd_theme
-html_theme = 'sphinx_rtd_theme'
-
-# Custom HTML title
+# Title shown in the browser tab and top of HTML pages
 html_title = "How to Download and Install Nvidia Drivers"
 
-# Short title (shown in navigation)
+# Optional short title (e.g., for nav bar)
 html_short_title = "Nvidia Driver Help"
 
-# Favicon (optional - place favicon.ico in _static folder)
+# Favicon (place favicon.ico in the root or _static folder)
 html_favicon = 'favicon.ico'
 
-# Hide "View page source" in the top right
+# Choose a theme (uncomment if needed)
+# html_theme = 'sphinx_rtd_theme'
+
+# Hide "View page source"
 html_show_sourcelink = False
 
-# Allow raw HTML inside .rst files
+# Allow raw HTML blocks in .rst files
 html_allow_unsafe = True
 
-# Theme options (optional - depends on theme)
+# Theme customization options
 html_theme_options = {
-    'navigation_depth': 4,
-    'collapse_navigation': False,
-    'style_external_links': True,
+    'show_powered_by': False,
 }
+raw_enabled = True
 
-# Static files (custom CSS, JS, images)
-# Uncomment if needed and create a _static folder
-# html_static_path = ['_static']
+# Paths to templates and static files
+templates_path = ['_templates']
+# html_static_path = ['_static']  # Uncomment if you have static assets
 
-# -- Custom Scripts or Styles (Optional) -------------------------------------
-
-# def setup(app):
-#     app.add_css_file("custom.css")
-#     app.add_js_file("custom.js")
+# Patterns to ignore when looking for source files
+# exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
